@@ -11,3 +11,8 @@ functions:
     handler: src/handler.generateRandomNumber
     timeout: 60 # seconds
     memorySize: 128 # mb
+    
+Type: AWS::S3::BucketPolicy
+Properties: 
+  Bucket: String
+  PolicyDocument: Json
